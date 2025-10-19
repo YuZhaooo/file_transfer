@@ -1,0 +1,25 @@
+{
+	"FileVersion" : 3,
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"FriendlyName" : "DMSDeviceProfileSelector",
+	"Description" : "DMS Device Profile Selector used to determine the system settings for platforms",
+	"Category" : "Device Profile Selectors",
+	"CreatedBy" : "",
+	"CreatedByURL" : "",
+	"DocsURL" : "",
+	"MarketplaceURL" : "",
+	"SupportURL" : "",
+	"EnabledByDefault" : true,
+	"CanContainContent" : false,
+	"IsBetaVersion" : false,
+	"Installed" : false,
+	"Modules" :
+	[
+		{
+			"Name" : "DMSDeviceProfileSelector",
+			"Type" : "RuntimeNoCommandlet",
+			"LoadingPhase" : "PostConfigInit"
+		}
+	]
+}

@@ -1,0 +1,31 @@
+version: 1.0
+project: FBK_GEN2                         # Project name will be defined in the scenario or UE config file
+transform_base_to_project:
+  default:                                   # Default transform for the case there was no match for the vehicle model
+    rotation:    [0.0, 0.0, 0.0]             # RPY rotation in Radians
+    translation: [-1.411584, 0.0, -0.65192]  # XYZ offset in Meters
+    scale:       [1.0, 1.0, 1.0]            # XYZ scale in meters
+  Audi:                                      # TBD replace with Audi_A5_8W6_Cabrio or similar as soon as it is renamed in the scenario
+    rotation:    [0.0, 0.0, 0.0]             # RPY rotation in Radians
+    translation: [-1.411584, 0.0, -0.65192]  # XYZ offset in Meters
+    scale:       [1.0, 1.0, 1.0]            # XYZ scale in meters
+  Audi_A5:                                      # TBD replace with Audi_A5_8W6_Cabrio or similar as soon as it is renamed in the scenario
+    rotation:    [0.0, 0.0, 0.0]             # RPY rotation in Radians
+    translation: [-1.411584, 0.0, -0.65192]  # XYZ offset in Meters
+    scale:       [1.0, 1.0, 1.0]            # XYZ scale in meters
+  Audi_EQ5:                                      # TBD replace with Audi_EQ5 or similar as soon as it is renamed in the scenario
+    rotation:    [0.0, 0.0, 0.0]             # RPY rotation in Radians
+    translation: [-1.0, 0.0, -0.65192]  # XYZ offset in Meters
+    scale:       [1.0, 1.0, 1.0]            # XYZ scale in meters
+  Audi_no_offset:                            # TBD replace with Audi_A5_8W6_Cabrio or similar as soon as it is renamed in the scenario
+    rotation:    [0.0, 0.0, 0.0]             # RPY rotation in Radians
+    translation: [0.0, 0.0, 0.0]             # XYZ offset in Meters
+    scale:       [1.0, 1.0, 1.0]             # XYZ scale in meters
+  IDBuzz:
+    rotation:    [0.0, 0.0, 0.0]             # RPY rotation in Radians
+    translation: [0.0, 0.0, 0.0]             # XYZ offset in Meters
+    scale:       [1.0, 1.0, 1.0]             # XYZ scale in meters
+  IDEveryOne:
+    rotation:    [0.0, 0.0, 0.0]             # RPY rotation in Radians
+    translation: [0.0, 0.0, 0.0]             # XYZ offset in Meters
+    scale:       [1.0, 1.0, 1.0]             # XYZ scale in meters
