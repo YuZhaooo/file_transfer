@@ -1,0 +1,44 @@
+version: 0.2
+description: >
+  Driver yawning
+
+car:  
+  model: Audi # Possible values:Audi (use none if no car is needed (e.g. for low-end systems))
+  speed: 60 # speed [km/h]
+
+environment: Forest   # Possible values: Forest
+
+camera:
+  spectrum: RGB # Possible values NIR/RGB
+  resolution: [1312, 1008]
+  framerate: 60
+  location: [2.363927674, -0.372700005, 1.302219988]                    # X, Y, Z in meters
+  rotation: [0.014102260844806, -0.3103195532218962, 0.0461814104369736] # Roll/Pitch/Yaw in radians
+  mirrored: no  # Possible values yes and no
+
+occupants:
+  driver:
+    character: Jesse        # Possible values Gavin, Hana, Ada, Bernice, Jesse, Mylen, Danielle, Roux, Maria, Neema, Sook-ja, Glenda, Omar, Trey, Taro, Stephane, Lucian, Keiji    
+    glasses: none          # Possible values: glasses_1        
+    mask: none             # Possible values: mask_1             
+    beard:  none           # Possible values: beard_1
+    mustache: none         # Possible values: mustache_1
+    pupil: 0               # Eye pupil parameter:range 0-1 (0 - black, white - 1)
+    sclera: 1              # Eye sclera parameter: default = 1 (0 - black)
+
+channels_parameters:
+  channels_blendout_defaults:
+    common: 0
+    eye_gaze: 0
+    eyelids: 0
+    face: 0
+    head: 0
+    upper_body: 0
+    left_hand: 0
+    right_hand: 0
+
+scenario:
+  driver:
+    sequence:
+      common:
+      - animation: Idle_Sleepy	

@@ -1,0 +1,297 @@
+Release Notes - CARIAD Rescue Mission AP4.10 ADAS - DMS/OMS Validation - Version 2.0.5
+
+** Bug
+    * [DMSSIM-633] - VOM-8284: In yawning scenarios, characters change hair color between blonde and black
+
+Release Notes - CARIAD Rescue Mission AP4.10 ADAS - DMS/OMS Validation - Version 2.0.4
+
+** Task
+    * [DMSSIM-635] - VOM-8285: Proposal to remove the columns and field names which are not pupulated to decrease csv file size.
+    * [DMSSIM-638] - Animation for holding a phone at left ear
+
+Release Notes - CARIAD Rescue Mission AP4.10 ADAS - DMS/OMS Validation - Version 2.0.3
+
+** Task
+    * [DMSSIM-635] - VOM-8285: Proposal to remove the columns and field names which are not pupulated to decrease csv file size.
+
+** Bug
+    * [DMSSIM-621] - BP_Irene_Talk_Phone_Ear_Right_Hand_01: Phone intersects with head -> Add BP_Irene_Talk_Phone_Ear_Right_Hand_02
+    * [DMSSIM-628] - VOM-8284: incorrect gaze direction for certain characters
+    * [DMSSIM-629] - VOM-8286: Abrupt transition from eating to sitting
+    * [DMSSIM-630] - VOM-8336: head or shadow floating in the rear seat
+    * [DMSSIM-631] - VOM-8336: Smoking with the eye
+
+
+Release Notes - CARIAD Rescue Mission AP4.10 ADAS - DMS/OMS Validation - Version 2.0.2
+
+** Bug
+    * [DMSSIM-587] - Investigate a bug  of noise in shadows
+    * [DMSSIM-620] - Head rotation debug sphere is rendered in the app 
+
+** Feature
+    * [DMSSIM-622] - Increase head rotation range to 90°
+
+
+Release Notes - CARIAD Rescue Mission AP4.10 ADAS - DMS/OMS Validation - Version 2.0.1
+
+** Bug
+    * [DMSSIM-554] - No movement in the application for the animations in PassengerAnim folder except for 'Hands behind head' and 'Hands crossed'
+    * [DMSSIM-570] - Adjusting of driver's smoking cigarette animations for both hands
+    * [DMSSIM-578] - Common channel blending does not work
+    * [DMSSIM-580] - Hands distorted for Jesse, Neema, Maria, Stephane, Trey, Keiji
+    * [DMSSIM-582] - Incorrect character seated posture
+    * [DMSSIM-584] - Animation stops at some point
+    * [DMSSIM-590] - Incorrect gaze origin calculated in case of custom car config
+    * [DMSSIM-591] - Anim with passengers leaning close to driver is not available
+    * [DMSSIM-599] - 'BaseballCap1' goes outside of the car for Jesse, Taro, Trey
+    * [DMSSIM-609] - Jumping behavior between holding the steering wheel and other animations for all characters
+    * [DMSSIM-618] - Car dimensions hardcoded in plugin
+    * [DMSSIM-619] - Audi A5 is hardcoded in anim blueprint
+
+** Sub-task
+    * [DMSSIM-592] - Some body animations stretch the spine
+    * [DMSSIM-595] - Effectors don't fully fix mouth related animations
+    * [DMSSIM-597] - Absence animation for passengers
+    * [DMSSIM-614] - IK support for eyes related animations
+    * [DMSSIM-616] - Burger Model glitch
+
+
+Release Notes - CARIAD Rescue Mission AP4.10 ADAS - DMS/OMS Validation - Version 2.0
+
+** Task
+    * [DMSSIM-508] - Adjusting of occupants animations 
+    * [DMSSIM-509] - Adjusting of animation originally created for driver and applied to passengers  
+    * [DMSSIM-523] - Processing of recorded passengers animations
+    * [DMSSIM-579] - Support handheld object in preview
+
+** Feature
+    * [DMSSIM-454] - Investigate way how to adjust the rotation of the palms of the hand to the rotation of the steering wheel
+    * [DMSSIM-482] - Support Occupants in the Scenario
+    * [DMSSIM-483] - Include Occupants in the simulation with animations defined by the Scenario
+    * [DMSSIM-486] - Include Occupants GT-data into the GT-file(s)
+    * [DMSSIM-487] - Define the format of Occupants simulation in scenario-file
+    * [DMSSIM-488] - Creating of the Animations for Occupants
+
+** Bug
+    * [DMSSIM-521] - Black sclera if incorrect asset is used
+    * [DMSSIM-522] - Investigate bugs in AOI
+    * [DMSSIM-529] - Moving down/back of the character
+    * [DMSSIM-544] - "5350-04-testing-drink-bottle-right-hand" hand intersects with face.
+    * [DMSSIM-564] - Missing glasses on some characters (Hana)
+    * [DMSSIM-565] - Phone model - flipped polygons
+    * [DMSSIM-574] - Pupil and sclera cannot be configured
+    * [DMSSIM-575] - Investigation of disapearnes of animations with objects depends on different characters
+    * [DMSSIM-576] - Passenger hand-held objects disappear after driver animation ends
+    * [DMSSIM-577] - Character head is tilted to the front with older animations
+
+** Sub-task
+    * [DMSSIM-493] - Add Occupants(BP Characters) put them on seats 
+    * [DMSSIM-494] - Get scenario data of Occupants parameters from the plug-in
+    * [DMSSIM-495] - Provide Occupants GT-data for saving
+    * [DMSSIM-496] - Create templates of animation blueprints for occupant 
+    * [DMSSIM-497] - Applying of the occupant BP template to All concrete passengers
+    * [DMSSIM-541] - Investigate the problem of objects intersections with hands of different characters
+    * [DMSSIM-545] - Support glasses and mask for multiple occupants
+    * [DMSSIM-547] - Support hats for multiple occupants
+    * [DMSSIM-550] - Re-attach scarves and fix positioning
+    * [DMSSIM-551] - Support scarves for multiple occupants
+    * [DMSSIM-552] - Allow per-occupant body montage animations
+    * [DMSSIM-553] - Allow per occupant face animations (montage)
+    * [DMSSIM-558] - Support eye gaze tracking for individual occupants
+    * [DMSSIM-559] - Support procedural eyelids/blinking for multiple occupants
+    * [DMSSIM-561] - Seat adjustment for occupants
+    * [DMSSIM-567] - Support procedural head rotation for occupants
+    * [DMSSIM-568] - Tidy up blueprints relating to multiple occupants
+    * [DMSSIM-569] - Adjustable character height
+
+
+Release Notes - CARIAD Rescue Mission AP4.10 ADAS - DMS/OMS Validation - Version 1.7
+** Feature
+    * [DMSSIM-123] - Configurable UE Installation path in build scripts
+    * [DMSSIM-233] - Glasses NIR transparency and color
+    * [DMSSIM-275] - Handling of passive pause
+    * [DMSSIM-301] - Create demo scenarios for CARIAD with different camera positions / FOV
+    * [DMSSIM-318] - Process and apply to the Toolchain of the accessories
+    * [DMSSIM-326] - Add/Check Noise parameter in the scenario
+    * [DMSSIM-327] - Add Blur parameter in the scenario
+    * [DMSSIM-328] - Add illumination parameters in the scenario
+    * [DMSSIM-338] - Define a way to define of the vehicle coordinate system
+    * [DMSSIM-346] - Include the option of "no hairs" in the scenario. 
+    * [DMSSIM-347] - Support Scarfs in the Scenario 
+    * [DMSSIM-353] - Developing of the pipeline of animations recording by the smartsuit 
+    * [DMSSIM-379] - Support of NIR-light unit coordinates and direction(rotation)
+    * [DMSSIM-384] - Enable headless rendering
+    * [DMSSIM-388] - Switch on the rotation of Steering wheel
+    * [DMSSIM-415] - Apply recorded body animation to all metahumans
+    * [DMSSIM-441] - Include driver body position information into GT-data
+    * [DMSSIM-453] - Adjust of the animation: BP_Irene_Rub_Eye_Right_Hand_01
+    * [DMSSIM-460] - implementation of a multi-channel upper body animation system using a combined mode of recorded and procedural animations
+    * [DMSSIM-461] - Process of the first Animation: Yawn_Left_Hand_01
+    * [DMSSIM-463] - Adjust the animation: BP_Irene_Drink_Bottle_Right_hand_2
+    * [DMSSIM-465] - GT Signals for CARIAD
+    * [DMSSIM-472] - Create parametric animation of the steering wheel
+    * [DMSSIM-473] - Connect curve of Steering wheel to control of Steering Wheel   
+    * [DMSSIM-474] - Adjusting of the animations of the hands and up body (...)
+    * [DMSSIM-476] - Add objects into animations (Phone, food/drink, cigarets)
+    * [DMSSIM-484] - Provide Skeleton-GT from Editor to Plugin
+    * [DMSSIM-500] - Parse AnimNotifies to detect hand held objects
+
+
+** Bug
+    * [DMSSIM-287] - Incorrect eye visualization with sunglasses from certain angles
+    * [DMSSIM-291] - Procedural animations not played after pause
+    * [DMSSIM-293] - Passive pause does not freeze the detailed channel
+    * [DMSSIM-308] - Incorrect Parametric Curve Merging without blending 
+    * [DMSSIM-309] - Parametric animation not starting at first frame
+    * [DMSSIM-311] - Eyelids blending - unpredictable duration
+    * [DMSSIM-312] - Awkward head movements for Cariad regions Drivers_lap and Glovebox
+    * [DMSSIM-319] - Incorrect head direction in GT Data
+    * [DMSSIM-332] - Common channel only plays back head rotation
+    * [DMSSIM-342] - Face animation broken
+    * [DMSSIM-349] - Analize possible characters exagerated head rotation pitch 
+    * [DMSSIM-351] - Fix Default Pupil Brightness inconsistency
+    * [DMSSIM-380] - Wrong head orientation
+    * [DMSSIM-381] - Recorded animation not working on eye_gaze channel
+    * [DMSSIM-382] - Recorded animation not working on face channel
+    * [DMSSIM-383] - Recorded animation not working on head channel
+    * [DMSSIM-464] - Incorrect AOI in scenario In 002-03-EyesOnTraffic-UC2_dynamic 
+    * [DMSSIM-499] - Animation filtering not working at some cases
+    * [DMSSIM-505] - Common channel conflicts with steering wheel channel 
+    * [DMSSIM-533] -  "5402 -01-blending-upperbody-and-face-motions.yml" character leans back with a sudden move at the end of the video, plus hand intersects with face while yawning
+    * [DMSSIM-534] - No movement in the video for Click MMI Right Hand in 5400-02-blending-parametrized-eyegaze-with-upperbody-motions
+    * [DMSSIM-535] - "5402-03-blending-upperbody-with-eye-lids" no correct hand movement for the animation  BP_Irene_Talk_Phone_Ear_Right_Hand_01 
+    * [DMSSIM-536] - "5401-02-blending-upperbody-with-head-motion" incorrect movement of right hand for the animation "BP_Irene_Brush_Hair_Right_Hand_01"
+    * [DMSSIM-537] - "5400-03-blending-upperbody-with-eyegaze" animation BP_Irene_Drink_Bottle_Right_Hand_2_01 intersection of face with hand
+    * [DMSSIM-538] - "5401-04-blending-head-and-upper-body" not so accurate hand movement for both animations "smoke left and right hand"
+    * [DMSSIM-539] - "5400-01-blending-recorded-eyegaze-with-upperbody-motions" "yawn left hand" doesn't play in the video
+    * [DMSSIM-540] - "5402-04-blending-upperbody-with-eyelid-motion" weird finger position in animation BP_Irene_Talk_Phone_Face_Left_Hand_01
+    * [DMSSIM-543] - Scenario blueprint fails to load character appearance for occupants
+    * [DMSSIM-548] - "5350-11-testing-yawn-right-hand.scenario" hand intersects with face
+    * [DMSSIM-549] - Characters not loading when running packaged game
+
+** Task
+    * [DMSSIM-239] - Support vertical FOV in the scenario
+    * [DMSSIM-475] - Document disk space requirements for cloning / building the project (requested by Customer 1)
+    * [DMSSIM-501] - Create a list of AnimNotifies for hand held object in the skeleton
+    * [DMSSIM-502] - Detect related animations when filtering
+    * [DMSSIM-507] - Re-Adjusting of the animation with objects
+    * [DMSSIM-531] - Create connections from steering wheel to drivers hands by inverse kinematic methods
+
+Release Notes - CARIAD Rescue Mission AP4.10 ADAS - DMS/OMS Validation - Version 1.6
+
+** Feature
+    * [DMSSIM-167] - Support camera position(and rotation) in the simulation
+    * [DMSSIM-172] - Create/extend the scenario format to support parallel channels 
+    * [DMSSIM-173] - Reading of the updated scenario format that includes parallel channels and parametrized animations
+    * [DMSSIM-185] - Investigate and implement moving environment. compare it with stable
+    * [DMSSIM-187] - Models preparation for using in UE
+    * [DMSSIM-188] - Headgears - 3d models
+    * [DMSSIM-192] - Include Accessories into the Scenario
+    * [DMSSIM-193] - Include Beards, Mustashes, Hairstile into the Scenario
+    * [DMSSIM-202] - Investigate. Convert the blueprint "Create New Groom Binding Asset" so that a new binding asset is not created, but an existing binding asset is overwritten (Content/Models/Grooms/Hair/Bind_Asset)
+    * [DMSSIM-204] - Implement multichannels execution of the animations
+    * [DMSSIM-205] - Prepare recorded animation according to alfabet
+    * [DMSSIM-210] - Support camera FoV in the scenario. Update format. update reading procedure.
+    * [DMSSIM-211] - Support camera FoV in the simaulation/rendering.
+    * [DMSSIM-213] - Support Mouth opening GT data. Saving into CSV file.
+    * [DMSSIM-215] - Implement Blueprint for generation of binding assets
+    * [DMSSIM-217] - Optimisation of mechnism of adding Headgears, Glasses, Masks
+    * [DMSSIM-222] - Investigate way to remove animation curves from an animation container
+    * [DMSSIM-225] - Support GT for gaze directions
+    * [DMSSIM-228] - Implement blending procedure according to the description 
+    * [DMSSIM-229] - Provide correct data for calculation of mouth opening and gaze direction
+    * [DMSSIM-241] - Implementation of Paramtrized Head rotation animation
+    * [DMSSIM-242] - Implementation of Paramtrized Gaze direction animation
+    * [DMSSIM-243] - Investigation + Implemntation blending issues for parametrized animations
+    * [DMSSIM-246] - Implement of using Parametrized and Recorded animations in one scenario sequnce
+    * [DMSSIM-247] - Parametrized and Recorded animations in one scenario sequnce. Pluging.
+    * [DMSSIM-256] - Implement blending (blend-out) parameter
+    * [DMSSIM-260] - Implemet blending (blend-out/in) parameter in the Engine
+    * [DMSSIM-261] - Parameterized blinking
+    * [DMSSIM-280] - Add animation type (procedure type) to the scenario description
+    * [DMSSIM-282] - Change the vector curve transfer format for the eyelids channel
+
+
+** Bug
+    * [DMSSIM-218] - Maria brows bug
+    * [DMSSIM-226] - Artifacts at the beginning of video recording
+    * [DMSSIM-240] - Investigate the actual reason for hair disappearing
+    * [DMSSIM-245] - Per-channel animation filtration not working at runtime
+    * [DMSSIM-253] - Scenario parser error if start_pos = 0
+    * [DMSSIM-254] - Comments at the end of scenario file -> Parsing error
+    * [DMSSIM-283] - Character nods at the beginning of scenario
+
+** Task
+    * [DMSSIM-143] - Make possible series of animations (repeate animation) in the scenario.
+    * [DMSSIM-219] - Investigation of splitting animations by channels on the face (Blinks, Gaze direction, Mouth)
+    * [DMSSIM-238] - Improve error notification mechanism
+
+
+
+Release Notes - CARIAD Rescue Mission AP4.10 ADAS - DMS/OMS Validation - Version 1.5
+
+** Task
+    * [DMSSIM-135] - GT recorder - test coverage
+
+** Bug
+    * [DMSSIM-149] - Incorrect camera settings for custom video resolutions
+    * [DMSSIM-151] - GT Data - Eyes Open / Closed values not recorded
+    * [DMSSIM-155] - Letter D in folder name recognized as a command line flag
+
+
+** Feature
+    * [DMSSIM-85] - Create Blueprint to generate video from Editor
+    * [DMSSIM-111] -  Create a mechanics to change driver-chear position
+    * [DMSSIM-119] - Integrate OpenCppCoverage in the build toolchain
+    * [DMSSIM-164] - Include Driver's seat position into scenario.
+    * [DMSSIM-165] - Include driver's height param into scenario.
+    * [DMSSIM-166] - Implemet diffrent heights of driver for the animation. 
+    * [DMSSIM-168] - Create a Low-End device profile to be used when packaging the application for Cariad
+    * [DMSSIM-171] - Extend list of characters
+    * [DMSSIM-180] - Create a low-end device profile that would work an an office laptop
+    * [DMSSIM-181] - ST optimisation
+    * [DMSSIM-182] - Create procedure of putting driver in a driver-seat
+    * [DMSSIM-184] - Autofocus for camera depnds on driver position
+
+Release Notes - CARIAD Rescue Mission AP4.10 ADAS - DMS/OMS Validation - Version 1.4
+
+** Task
+    * [DMSSIM-104] - Possibility to optionally disable Construction script functionality
+    * [DMSSIM-138] - Calibrate the height of each model 
+
+** Bug
+    * [DMSSIM-142] - Investigate and fix the bug in differences of GT and SIL output. 
+
+** Feature
+    * [DMSSIM-100] - Create Urbar Environment
+    * [DMSSIM-110] - Create human models with diffrent heigh
+
+
+Release Notes - CARIAD Rescue Mission AP4.10 ADAS - DMS/OMS Validation - Version 1.3
+
+** Task
+    * [DMSSIM-107] - Add Logging output variations
+    * [DMSSIM-121] - Recalculate eyes' and head center positions to car coordinate system
+
+** Bug
+    * [DMSSIM-122] - Crash on map switch
+    * [DMSSIM-124] - Invalid command line during packaging
+    * [DMSSIM-126] - Recorder - camera is lagging by one frame
+    * [DMSSIM-132] - Command line parsing broken
+    * [DMSSIM-133] - Fix hear mustash, beard bug
+    * [DMSSIM-137] - Mustache and beard settings are ignored
+    * [DMSSIM-139] - Frame number information not shown in the game
+    * [DMSSIM-140] - Video recorder ignores video resolution/framerate from scenario
+
+** Feature
+    * [DMSSIM-31] - Environment creation 
+    * [DMSSIM-105] - Define target directory for video file and GT file
+    * [DMSSIM-109] - Add Speed of the car in the scenario 
+    * [DMSSIM-112] - Support car speed provided in the Scenario
+    * [DMSSIM-113] - Include Eyes into GT-data
+    * [DMSSIM-115] - Calculate GT-data for Eyes 
+    * [DMSSIM-117] - Include Environment param into the Scenatio
+    * [DMSSIM-118] - Сreating a load level 
+
+
+

@@ -1,0 +1,76 @@
+version: 1.0
+description: ""
+
+car:  
+  model: Audi # Possible values:Audi (use none if no car is needed (e.g. for low-end systems))
+  speed: 60 # speed [km/h]
+  car_visibility: yes
+
+environment: Forest   # Possible values: Forest
+
+sun:
+  location: [0.0, 0.0, 0.0]
+  rotation: [0.0, 0.1, 0.0]
+  sun_intensity: 175.0
+  sun_temperature: 5500.0
+
+camera:
+  spectrum: RGB # Possible values NIR/RGB
+  resolution: [2400, 1770]
+  framerate: 25
+  location: [2.423, -0.36104, 1.183]                    # X, Y, Z in meters [2.383, -0.36104, 1.183]
+  rotation: [0.0, -0.46249, 0.0] # Roll/Pitch/Yaw in radians [0.0, -0.46249, 0.0]
+  mirrored: no  # Possible values yes and no
+  fov: 45
+  embedded_lines: no
+  image_rotation: 0
+  illumination: # camera illumination parameters
+    intensity: 0.0   # light intensity in candela
+    outer_cone_angle: 15 # light cone angle in degrees
+
+occupants:
+  driver:
+    character: Mylen        # Possible values Gavin, Hana, Ada, Bernice, Jesse, Mylen, Danielle, Roux, Maria, Neema, Sook-ja, Glenda, Omar, Trey, Taro, Stephane, Lucian, Keiji    
+    glasses: none          # Possible values: glasses_1        
+    mask: none             # Possible values: mask_1             
+    beard:  none           # Possible values: beard_1
+    mustache: none         # Possible values: mustache_1
+    pupil: 0.0               # Eye pupil parameter:range 0-1 (0 - black, white - 1)
+    sclera: 1              # Eye sclera parameter: default = 1 (0 - black)
+    seat:
+      x_offset: 0.0
+      z_offset: 0.0
+    occupant_visibility: yes
+  passenger_rear_left:
+    character: Mylen        # Possible values Gavin, Hana, Ada, Bernice, Jesse, Mylen, Danielle, Roux, Maria, Neema, Sook-ja, Glenda, Omar, Trey, Taro, Stephane, Lucian, Keiji    
+    glasses: none          # Possible values: glasses_1        
+    mask: none             # Possible values: mask_1             
+    beard:  none           # Possible values: beard_1
+    mustache: none         # Possible values: mustache_1
+    pupil: 0               # Eye pupil parameter:range 0-1 (0 - black, white - 1)
+    sclera: 1              # Eye sclera parameter: default = 1 (0 - black)
+    seat:
+      x_offset: 0.0
+      z_offset: 0.0
+    occupant_visibility: yes
+
+channels_parameters:
+  channels_blendout_defaults:
+    common: 0
+    eye_gaze: 0
+    eyelids: 0
+    face: 0
+    head: 0
+    upper_body: 0
+    left_hand: 0
+    right_hand: 0
+
+scenario:
+  driver:
+    sequence:
+      common: 
+      - animation: normal_blink_no_yawn_head_straight_KE10RT28 #1s_eyes_close_no_yawn_head_left_SP05NZ29
+  passenger_rear_left:
+    sequence:
+      common: 
+      - animation: normal_blink_no_yawn_head_straight_KE10RT28 #1s_eyes_close_no_yawn_head_left_SP05NZ29
